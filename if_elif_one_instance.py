@@ -7,9 +7,6 @@ class A:
 	a: int
 	b: int
 
-	def __eq__(self, other):
-		return self.a == other.a and self.b == other.b
-
 
 a = A(1, 1)
 
@@ -19,4 +16,4 @@ def foo():
 		pass
 
 
-print(timeit.timeit(foo))  # 0.4610974980168976
+print(timeit.timeit(foo))  # 0.5689109929953702

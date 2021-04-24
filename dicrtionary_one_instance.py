@@ -7,9 +7,6 @@ class A:
 	a: int
 	b: int
 
-	def __eq__(self, other):
-		return self.a == other.a and self.b == other.b
-
 	def __hash__(self):
 		return self.a
 
@@ -23,4 +20,4 @@ def foo():
 	d[a]
 
 
-print(timeit.timeit(foo))  # 0.26946467300876975
+print(timeit.timeit(foo))  # 0.38361275603529066
